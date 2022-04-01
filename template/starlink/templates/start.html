@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOLA</title>
+</head>
+<body>
+    {{valor}}<br>
+    {% for peli in pelicula %}
+
+    {{peli.titulo| lower}} - {{peli.year}} - {{peli.descripcion | truncatewords:"10"}} - {% if peli.year < 2020 %} Viejita {% endif %} <br>
+    -<a href="{% url 'borrar' id=forloop.counter0 %}">borrar</a>
+    -<a href="{% url 'modificar' id=forloop.counter0 %}">modificar</a>
+    <br> 
+    {% endfor %}
+    -<a href="{% url 'agregar' %}">agregar peli</a>
+
+</body>
+</html>

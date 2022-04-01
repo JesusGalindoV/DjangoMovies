@@ -32,11 +32,11 @@ nav{
   border-top: 1px solid white;
 }
  .blue{
-   background-color: #3646d4;
+   background-color: #656777;
  }
 
  .green{
-   background-color: #769d2a;
+   background-color: #3f4699;
  }
 
  .teal {
@@ -204,4 +204,17 @@ footer p {
 
 .activo{
   background-color: #fcfdff59;
+}
+
+.ediciones{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.dead{
+  padding: 15px;
+}
+
+.margin{
+  margin-left: 15px;
 }
